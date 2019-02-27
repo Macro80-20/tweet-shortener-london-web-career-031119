@@ -26,11 +26,11 @@ def word_substituter(tweet)
     tweet.split(" ").map do |word|
       if dictionary.keys.include?(word.downcase)
         word = dictionary[word.downcase]
-        else
-          binding.pry
+        else  
         word
     end
   end.join(" ")
+  binding.pry
 end
 
 def bulk_tweet_shortener(tweet)
